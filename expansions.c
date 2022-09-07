@@ -62,6 +62,7 @@ void expand_alias(data_of_program *data)
 {
 	int i, j, was_expanded = 0;
 	char line[BUFFER_SIZE] = {0}, expansion[BUFFER_SIZE] = {'\0'}, *temp;
+
 	if (data->input_line == NULL)
 		return;
 	buffer_add(line, data->input_line);
